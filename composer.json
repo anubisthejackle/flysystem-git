@@ -1,0 +1,49 @@
+{
+    "name": "anubisthejackle/flysystem-git",
+    "type": "library",
+    "description": "Flysystem adapter for Git",
+    "keywords": [
+        "anubisthejackle",
+        "flysystem-git"
+    ],
+    "homepage": "https://github.com/anubisthejackle/flysystem-git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Travis Weston",
+            "email": "travis@4throomtech.com",
+            "homepage": "https://travisweston.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : ">=8.0",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Anubis\\Flysystem\\Git\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Anubis\\Flysystem\\Git\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
